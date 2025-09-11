@@ -5,7 +5,6 @@ from adafruit_hid.keycode import Keycode
 
 kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(kbd)
-consumer_control = ConsumerControl(usb_hid.devices)
 
 button_pins = {
     "btn_1": board.GP4,
