@@ -1,0 +1,32 @@
+keys:
+  f13: 
+  f14: 
+  f15: 
+  f16: 
+  f17: 
+  f18: 
+  f19: 
+  f20: 
+  f21: 
+
+#
+#   Config file for WeeKey Control.
+#
+# - Syntax here is important, for every type of command you start it with the preset and a colon e.g., 'run:' and 'type:'
+#
+# - For any given preset examples will be given next to the list, if you would like to see any others added please post 
+#   them in the issues tab and assign the 'new action preset' label on the github at: https://github.com/naomisilver/weekey/issues and i will add them as soon as I can
+#
+# - at the time of writing this, multi action commands I don't think are too feasible like pressing the return key, typing something then return key again.
+#   you would need to add a specific carve out in either the mcu's firmware or within the script itself, though i will see about adding it
+#
+# - Happy hacking!
+#
+# Existing presets are:
+#     run:      (runs the given command)              e.g., 'run:notepad.exe' 'run:"C:\filepath\something.exe"'
+#     type:     (Types the given string)              e.g., 'type:hello world'
+#     media:    (Global media controls)               e.g., 'media:play_pause' 'media:previous' 'media:next' 'media:vol_mute'... vol_up and vol_up seem to have issues in window 
+#     shortcut: (runs a sequence of keystrokes)       e.g., 'ctrl+v' 'ctrl+shift+alt+win+l'
+#     browser:  (opens given url in default browser)  e.g., 'browser:youtube.com'
+#
+#
