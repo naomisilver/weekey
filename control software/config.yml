@@ -1,5 +1,5 @@
 keys:
-  f13: 
+  f13:
   f14: 
   f15: 
   f16: 
@@ -25,7 +25,7 @@ keys:
 # Existing presets are:
 #     run:      (runs the given command)              e.g., 'run:notepad.exe' 'run:"C:\filepath\something.exe"'
 #     type:     (Types the given string)              e.g., 'type:hello world'
-#     media:    (Global media controls)               e.g., 'media:play_pause' 'media:previous' 'media:next' 'media:vol_mute'... vol_up and vol_up seem to have issues in window 
+#     media:    (Global media controls)               e.g., 'media:play_pause' 'media:previous' 'media:next' 'media:vol_mute'... vol_up and vol_up seem to have issues in windows
 #     shortcut: (runs a sequence of keystrokes)       e.g., 'ctrl+v' 'ctrl+shift+alt+win+l'
 #     browser:  (opens given url in default browser)  e.g., 'browser:youtube.com'
 #
