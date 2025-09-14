@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-  <img src="assets/images/WeeKey 9K" alt="Fully assembled WeeKey 9K" width="750" />
+  <img src="assets/images/WeeKey 9K.jpg" alt="Fully assembled WeeKey 9K" width="500" />
 </p>
 
 ---
