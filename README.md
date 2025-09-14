@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-  <img src="assets/images/WeeKey 9K.jpg" alt="Fully assembled WeeKey 9K" width="500" />
+  <img src="https://i.imgur.com/DbgnDYs.jpeg" alt="Fully assembled WeeKey 9K" width="600" />
 </p>
 
 ---
@@ -25,7 +25,6 @@
 ## Repo structure
 
 ```text
-📁 assets/                  # Assets used in build guide
 📁 stls/                    # STL files for 3D printing
 📁 control software/        # Control software source code 
 📁 pico/                    # firmware used on the MCU
