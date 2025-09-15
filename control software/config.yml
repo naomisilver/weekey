@@ -22,6 +22,8 @@ keys:
 #
 # - Happy hacking!
 #
+# - Of course you're not limited to the presets I've made. The keypad presses existing keys, meaning you can set things like discord mute/deafen by just setting that within discord itself
+#
 # Existing presets are:
 #     run:      (runs the given command)              e.g., 'run:notepad.exe' 'run:"C:\filepath\something.exe"'
 #     type:     (Types the given string)              e.g., 'type:hello world'
