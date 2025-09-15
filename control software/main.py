@@ -1,7 +1,7 @@
 """
     - WeeKey control main file
     - Naomi Silver September 2025
-    - V1.2 - added notification support through pystray
+    - V1.2.1 - fixed a bug with pystray notifcation loop
 """
 
 """
@@ -48,45 +48,45 @@ def handle_action(action): # action handling
         if action.startswith("run:"): 
             cmd = action[4:].strip() # strip the command part of the config setup
             subprocess.Popen(cmd, shell=False) # run shell command to open
-            notify(f"running command: {cmd}", icon)
             time.sleep(0.1)
+            notify(f"running command: {cmd}", icon)
 
         elif action.startswith("type:"):
             text = action[5:].strip()
             keyboard.write(text)
-            notify(f"writing text: {text}", icon)
             time.sleep(0.1)
+            notify(f"writing text: {text}", icon)
 
         elif action.startswith("media:"):
             media = action[6:].strip()
-            if media == ("play_pause"):
+            if media == ("play_pause"): 
                 win32api.keybd_event(VK_MEDIA_PLAY_PAUSE, 0, 0); win32api.keybd_event(VK_MEDIA_PLAY_PAUSE, 0, KEYEVENTF_KEYUP, 0) # press and release using win32api
-                notify(f"running: {media}", icon)
                 time.sleep(0.3) # additional debounce, stops it from rapidly pausing and unpausing
+                notify(f"running: {media}", icon)
             if media == ("next"):
                 win32api.keybd_event(VK_MEDIA_NEXT_TRACK, 0, 0); win32api.keybd_event(VK_MEDIA_NEXT_TRACK, 0, KEYEVENTF_KEYUP, 0)
-                notify(f"running: {media}", icon)
                 time.sleep(0.3)
+                notify(f"running: {media}", icon)
             if media == ("previous"):
                 win32api.keybd_event(VK_MEDIA_PREV_TRACK, 0, 0); win32api.keybd_event(VK_MEDIA_PREV_TRACK, 0, KEYEVENTF_KEYUP, 0)
-                notify(f"running: {media}", icon)
                 time.sleep(0.3)
+                notify(f"running: {media}", icon)
             if media == ("vol_mute"):
                 win32api.keybd_event(VK_VOLUME_MUTE, 0, KEYEVENTF_EXTENDEDKEY); win32api.keybd_event(VK_VOLUME_MUTE, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP)
-                notify(f"running: {media}", icon)
                 time.sleep(0.3)
+                notify(f"running: {media}", icon)
 
         elif action.startswith("shortcut:"):
             shortcut = action[9:].strip()
             keyboard.press_and_release(shortcut)
-            notify(f"running: {shortcut}", icon)
             time.sleep(0.2)
+            notify(f"running: {shortcut}", icon)
 
         elif action.startswith("browser:"):
             url = action[8:].strip()
             os.startfile(url)
-            notify(f"opening: {url}", icon)
             time.sleep(0.2)
+            notify(f"opening: {url}", icon)
 
         else:
             print("not valid macro")
