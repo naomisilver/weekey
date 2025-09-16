@@ -10,7 +10,7 @@
 
 **WeeKey** is a macro pad with both onboard memory capabilities and fully featured control software. It uses hand soldered, regular keyboard switches and a Raspberry Pi Pico (or similar MCU) as the controller. It relies on the F13-F21 keys for input as they're unassigned in most modern software and free for the taking.
 
-> while I have version controlled STLs hosted here, I would prefer you download them [printables.com]() so I can get my reward points :P
+> while I have version controlled STLs hosted here, I would prefer you download them [printables.com](https://www.printables.com/model/1415910-weekey-9k) so I can get my reward points :P
 
 ---
 
