@@ -99,7 +99,7 @@ def handle_action(action): # action handling
 
 def key_updater(): # update the config and key binds to refresh every 5 seconds
     while True:
-        keyboard.add_hotkey('__dummy__', lambda: None) # dummy hotkey to prevent crash loop one PC sleep
+        keyboard.add_hotkey('ctrl+shift+alt+win+tab+q', print, "dummy") # dummy hotkey to prevent crash loop one PC sleep
         keyboard.unhook_all_hotkeys() # remove old hotkeys
         key_map = load_config()
         bind_keys(key_map)
