@@ -25,7 +25,7 @@
 ## Repo structure
 
 ```text
-📁 stls/                    # STL files for 3D printing
+📁 stl/                    # STL files for 3D printing
 📁 control software/        # Control software source code 
 📁 pico/                    # firmware used on the MCU
 📄 MIT license              # MIT License for software and hardware
