@@ -45,7 +45,7 @@ This includes:
 
 ## Licensing
 
-This project uses the [MIT licnese](./LICENSE) meaning you're free to use, modify and redistribute with attribution.
+This project uses the [CC-BY-SA 4.0 License](./LICENSE) meaning you're free to use, modify and redistribute with attribution provided it's also licensed under the same license.
 
 ---
 
