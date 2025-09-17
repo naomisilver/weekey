@@ -45,7 +45,7 @@ This includes:
 
 ## Licensing
 
-This project uses the [CC-BY-SA 4.0 License](./LICENSE) meaning you're free to use, modify and redistribute with attribution provided it's also licensed under the same license.
+This project uses dual licensing with [MIT licensing](./LICENSE) on all code and the hardware designs are licensed under the [CC-BY-SA 4.0 License](./stl/LICENSE). Meaning you're free to use, modify and redistribute with attribution for code and licensing deritiatives of hardware designs under the same `CC-BY-SA 4.0 License`
 
 ---
 
