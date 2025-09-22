@@ -1,18 +1,18 @@
 keys:
-  f13:
+  f13: 
   f14: 
   f15: 
   f16: 
   f17: 
   f18: 
   f19: 
-  f20: 
+  f20:
   f21: 
 
 #
 #   Config file for WeeKey Control.
 #
-# - Syntax here is important, for every type of command you start it with the preset and a colon e.g., 'run:' and 'type:'
+# - Syntax here is important, for every type of command you start it with the preset and a colon e.g., 'run;' and 'type;' 'mouse;move;1920|1080' [x | y]
 #
 # - For any given preset examples will be given next to the list, if you would like to see any others added please post 
 #   them in the issues tab and assign the 'new action preset' label on the github at: https://github.com/naomisilver/weekey/issues and i will add them as soon as I can
@@ -24,11 +24,16 @@ keys:
 #
 # - Of course you're not limited to the presets I've made. The keypad presses existing keys, meaning you can set things like discord mute/deafen by just setting that within discord itself
 #
-# Existing presets are:
-#     run:      (runs the given command)              e.g., 'run:notepad.exe' 'run:"C:\filepath\something.exe"'
-#     type:     (Types the given string)              e.g., 'type:hello world'
-#     media:    (Global media controls)               e.g., 'media:play_pause' 'media:previous' 'media:next' 'media:vol_mute'... vol_up and vol_up seem to have issues in windows
-#     shortcut: (runs a sequence of keystrokes)       e.g., 'ctrl+v' 'ctrl+shift+alt+win+l'
-#     browser:  (opens given url in default browser)  e.g., 'browser:youtube.com'
+# Existing modifiers are:
+#     repeating;(allows for actions to repeat)        e.g., 'delay;0.01;repeating;mouse;click;right' will click the mouse every 10ms, need to fix for sequences
+#     delay;    (adds delay to a preset)              e.g., '...delay;0.3;mouse;click;left' default delay is 0.2, can be used on each element of a sequence. You can't delay the first action but can every action after
+#     sequence; (runs a sequence of presets)          e.g., 'sequence;run;notepad.exe,,,type;hello world,,,shortcut;ctrl+s' the ,,, is the delimiter, seperate your actions with them
 #
+# Existing presets are:
+#     run;      (runs the given command)              e.g., 'run;notepad.exe' 'run;"C:\filepath\something.exe"'
+#     type;     (Types the given string)              e.g., 'type;hello world'
+#     media;    (Global media controls)               e.g., 'media;play_pause' 'media;previous' 'media;next' 'media;vol_mute'... vol_up and vol_up seem to have issues in windows
+#     shortcut; (runs a sequence of keystrokes)       e.g., 'shortcut;ctrl+v' 'shortcut;ctrl+shift+alt+win+l'
+#     browser;  (opens given url in default browser)  e.g., 'browser;https://youtube.com'
+#     mouse;    (does things with mouse)              e.g., 'mouse;click;left', 'mouse;click;right' wouldn't be super useful without sequence, now you can macro your hero bans :)
 #
